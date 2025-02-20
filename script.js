@@ -57,5 +57,6 @@ particlesJS('particles-js', {
 });
 
 document.querySelector('.download-btn').addEventListener('click', function() {
-    alert('Download starting...');
+    // Заменяем alert на переадресацию
+    window.location.href = 'https://hqlauncher.github.io/download/';
 });
