@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f1a;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0,255,255,0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(0,255,255,0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0,255,255,0.8);
+    }
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+header .download-top {
+    margin-top: 40px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.features {
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00ffff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+}
+
+.feature-card h3 {
+    color: #00ffff;
+    margin-bottom: 15px;
+}
+
+.download {
+    text-align: center;
+}
+
+.download-btn {
+    background: #00ffff;
+    color: #0f0f1a;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.download-btn:hover {
+    background: #66ffff;
+    transform: scale(1.05);
+}
+
+.version {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.welcome, .how-to-use, .safety, .faq {
+    margin-bottom: 60px;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.welcome p, .safety p {
+    color: #cccccc;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.download-top {
+    text-align: center;
+}
+
+.instructions ol {
+    margin-left: 20px;
+    color: #cccccc;
+}
+
+.instructions li {
+    margin: 10px 0;
+}
+
+.faq-content {
+    display: grid;
+    gap: 20px;
+}
+
+.faq-item {
+    background: rgba(255,255,255,0.03);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.faq-item h3 {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
